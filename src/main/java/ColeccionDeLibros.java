@@ -26,28 +26,28 @@ public class ColeccionDeLibros {
 
             switch (opcionPrincipal) {
                 case 1:
-                    //agregarLibro();
-                    System.out.println();
+                    //llenarMatrizManual(libros[]);
+                    System.out.println("Proximamente");
 
                     break;
                 case 2:
-                    //buscar libro
-                    System.out.println();
+                    //buscar libro, cumplir almeno un nombre de las caracteristicas
+                    System.out.println("Proximamente");
 
                     break;
                 case 3:
                     //mostrar espacios usados
-                    System.out.println();
+                    System.out.println("Proximamente");
 
                     break;
                 case 4:
                     //mostrar espacios disponibles
-                    System.out.println();
+                    System.out.println("Proximamente");
 
                     break;
                 case 5:
                     //mostrar toda la coleccion
-                    System.out.println();
+                    System.out.println("Proximamente");
 
                     break;
 
@@ -62,23 +62,62 @@ public class ColeccionDeLibros {
         while (!salir);
     }
 
-   // public static String[][] agregarLibro(String misLibros[], String titulo, String autor, String editorial){}
+   //public static String[][] agregarLibro(String misLibros[], String titulo, String autor, String editorial){}
 
-   // public static int totalLibros(String misLibros[]){}
+    public static void llenarMatrizManual(String[] libros) {
+
+        var filas = 100;
+        var columnas = 3;
+        String titulo;
+        String autor;
+        String editorial;
+
+        for (var fila = 0; fila < libros.length; fila++) {
+            for (var columna = 0; columna < libros.length; columna++) {
+                System.out.println("Ingrese un valor");
+                //libros[fila][columna] = ingresar();
+            }
+        }
+    }
+
+
+
+
+    // public static int totalLibros(String misLibros[]){  // System.out.println(arreglo.lenght) }
 
    // public static int espaciosDisponibles(String misLibros[]){}
 
-    public static void mostrarTotalLibros(String misLibros[]){}
+    public static void mostrarTotalLibros(String misLibros[]){} //buscar con ciclo for
     public static void mostrarEspaciosDisponibles(String misLibros[]){}
-    public static void mostrarBusquedaLibroAutor(String misLibros[], String autor){}
-    public static void mostrarTodaColeccion(String misLibros[]){}
+    public static void mostrarBusquedaLibroAutor(String misLibros[], String autor){
 
+        /*El siguiente metodo es para la busqueda de un dato en un arreglo, pasar a busqueda de matriz
 
+        * int[] arreglo = {8,4,9,7,1,2}; arreglo presentado
+          int dato= 9; dato a buscar
 
+          for(int i =0;i<arreglo.length;i++){
+             if(dato == arreglo[i]){
+                System.out.println(i+1);
+             break;
+          }
+}
+        * */
+    }
+    public static void mostrarTodaColeccion(String misLibros[]){
+        /*
+        * for(int i=0;i>arreglo.lenght;i++){
+              System.out.println(arreglo[[i]]);
+          }
+        * //muestra los numeros dentro del arreglo(con parametros(arreglo.lenght)),
+        * aunque se agreguen datos dentro del arreglo, muestra todo
+        * */
 
+    }
 
-
-
+    public static String ingresar() {
+        return new Scanner(System.in).next();
+    }
 
 
 }
